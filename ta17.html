@@ -1,0 +1,15 @@
+<!DOCTYPE html><html>
+    <head>
+    </head>
+    <body>
+        <p ><span id="ValorIncrementar">0</span></p>
+        <button id="Incrementador">Incrementar</button>
+        <script>
+            const boton = document.getElementById("Incrementador");
+            boton.addEventListener("click", () => {
+                const texto = document.getElementById("ValorIncrementar");
+                texto.textContent = parseInt(texto.textContent) + 1;
+            });
+        </script>
+    </body>
+</html>
